@@ -14,6 +14,9 @@
 		6A03B3D4242FC154001A080D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A03B3D3242FC154001A080D /* Assets.xcassets */; };
 		6A03B3D7242FC154001A080D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A03B3D6242FC154001A080D /* Preview Assets.xcassets */; };
 		6A03B3DA242FC154001A080D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A03B3D8242FC154001A080D /* LaunchScreen.storyboard */; };
+		6A03B3E3242FC3F8001A080D /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03B3E1242FC3F8001A080D /* Order+CoreDataClass.swift */; };
+		6A03B3E4242FC3F8001A080D /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03B3E2242FC3F8001A080D /* Order+CoreDataProperties.swift */; };
+		6A03B3E6242FCF6D001A080D /* OrderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03B3E5242FCF6D001A080D /* OrderSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		6A03B3D6242FC154001A080D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A03B3D9242FC154001A080D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A03B3DB242FC154001A080D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A03B3E1242FC3F8001A080D /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		6A03B3E2242FC3F8001A080D /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		6A03B3E5242FCF6D001A080D /* OrderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		6A03B3C9242FC14F001A080D /* PizzaApp */ = {
 			isa = PBXGroup;
 			children = (
+				6A03B3E1242FC3F8001A080D /* Order+CoreDataClass.swift */,
+				6A03B3E2242FC3F8001A080D /* Order+CoreDataProperties.swift */,
 				6A03B3CA242FC14F001A080D /* AppDelegate.swift */,
 				6A03B3CC242FC14F001A080D /* SceneDelegate.swift */,
 				6A03B3D1242FC14F001A080D /* ContentView.swift */,
@@ -66,6 +74,7 @@
 				6A03B3DB242FC154001A080D /* Info.plist */,
 				6A03B3CE242FC14F001A080D /* PizzaApp.xcdatamodeld */,
 				6A03B3D5242FC154001A080D /* Preview Content */,
+				6A03B3E5242FCF6D001A080D /* OrderSheet.swift */,
 			);
 			path = PizzaApp;
 			sourceTree = "<group>";
@@ -149,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A03B3E4242FC3F8001A080D /* Order+CoreDataProperties.swift in Sources */,
 				6A03B3D0242FC14F001A080D /* PizzaApp.xcdatamodeld in Sources */,
 				6A03B3CB242FC14F001A080D /* AppDelegate.swift in Sources */,
 				6A03B3D2242FC14F001A080D /* ContentView.swift in Sources */,
+				6A03B3E3242FC3F8001A080D /* Order+CoreDataClass.swift in Sources */,
+				6A03B3E6242FCF6D001A080D /* OrderSheet.swift in Sources */,
 				6A03B3CD242FC14F001A080D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
