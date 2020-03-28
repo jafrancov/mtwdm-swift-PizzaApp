@@ -23,6 +23,14 @@ struct ContentView: View {
         predicate: NSPredicate(format: "status != %@", Status.completed.rawValue)
     ) var orders : FetchedResults<Order>
     
+    func updateOrder(order: Order) {
+        let newStatus = order.orderStatus == .pending ? Status.preparing : .completed
+        managedObjectContext.performAndWait {
+            order.orderStatus = newStatus
+            try? managedObjectContext.save()
+        }
+    }
+    
     var body: some View {
         NavigationView  {
             List {
@@ -35,10 +43,15 @@ struct ContentView: View {
                                 .font(.subheadline)
                         }
                         Spacer()
-                        Button(action:{print("Updateorder")}) {
+                        Button(action:{self.updateOrder(order: order)}) {
                             Text(order.orderStatus == .pending ? "Prepare" : "Complete")
                                 .foregroundColor(.blue)
                         }
+                    }
+                }
+                .onDelete { indexSet in
+                    for index in indexSet {
+                        self.managedObjectContext.delete(self.orders[index])
                     }
                 }
             }
